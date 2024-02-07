@@ -185,7 +185,7 @@ public class CountryPickerView: NibView {
                 }
                 guard let name = countryObj["name"] as? String,
                       let code = countryObj["code"] as? String,
-                      let phoneCode = countryObj["dial_code"] as? String else {
+                      let phoneCode = countryObj["language_code"] as? String else {
                     continue
                 }
                 let country = Country(name: name, code: code, phoneCode: phoneCode)
