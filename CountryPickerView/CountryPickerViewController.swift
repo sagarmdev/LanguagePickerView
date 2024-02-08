@@ -16,11 +16,10 @@ public class CountryPickerViewController: UITableViewController {
     fileprivate var sectionsTitles = [String]()
     fileprivate var countries = [String: [Country]]()
     fileprivate var hasPreferredSection: Bool {
-        return dataSource.preferredCountriesSectionTitle != nil &&
-            dataSource.preferredCountries.count > 0
+        return true
     }
     fileprivate var showOnlyPreferredSection: Bool {
-        return dataSource.showOnlyPreferredSection
+        return true
     }
     internal weak var countryPickerView: CountryPickerView! {
         didSet {
@@ -35,7 +34,7 @@ public class CountryPickerViewController: UITableViewController {
         
         prepareTableItems()
         prepareNavItem()
-        prepareSearchBar()
+//        prepareSearchBar()
     }
    
 }
@@ -130,12 +129,13 @@ extension CountryPickerViewController {
             : countries[sectionsTitles[indexPath.section]]![indexPath.row]
 
         var name = country.localizedName(dataSource.localeForCountryNameInList) ?? country.name
-        if dataSource.showCountryCodeInList {
-            name = "\(name) (\(country.code))"
-        }
-        if dataSource.showPhoneCodeInList {
-            name = "\(name) (\u{202A}\(country.phoneCode)\u{202C})"
-        }
+//        if dataSource.showCountryCodeInList {
+//            name = "\(name) (\(country.code))"
+//        }
+//        if dataSource.showPhoneCodeInList {
+//            name = "\(name) (\u{202A}\(country.phoneCode)\u{202C})"
+//        }
+        
         cell.imageView?.image = country.flag
         
         cell.flgSize = dataSource.cellImageViewSize
