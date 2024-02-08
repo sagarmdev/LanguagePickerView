@@ -129,7 +129,7 @@ extension CountryPickerViewController {
         let country = isSearchMode ? searchResults[indexPath.row]
             : countries[sectionsTitles[indexPath.section]]![indexPath.row]
 
-        var name = country.localizedName(dataSource.localeForCountryNameInList) ?? country.name
+        var name = country.name
 //        if dataSource.showCountryCodeInList {
 //            name = "\(name) (\(country.code))"
 //        }
