@@ -29,11 +29,11 @@
                                 <constraint firstAttribute="height" constant="30" id="fSR-2D-HkZ"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mf-hk-O6C">
-                            <rect key="frame" x="70" y="36" width="22" height="22"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mf-hk-O6C">
+                            <rect key="frame" x="70" y="36" width="26" height="22"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="22" id="5qD-E3-MS5"/>
-                                <constraint firstAttribute="width" constant="22" id="LTB-OE-U5Z"/>
+                                <constraint firstAttribute="width" constant="26" id="LTB-OE-U5Z"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
