@@ -130,12 +130,12 @@ extension CountryPickerViewController {
             : countries[sectionsTitles[indexPath.section]]![indexPath.row]
 
         var name = country.localizedName(dataSource.localeForCountryNameInList) ?? country.name
-        if dataSource.showCountryCodeInList {
-            name = "\(name) (\(country.code))"
-        }
-        if dataSource.showPhoneCodeInList {
-            name = "\(name) (\u{202A}\(country.phoneCode)\u{202C})"
-        }
+//        if dataSource.showCountryCodeInList {
+//            name = "\(name) (\(country.code))"
+//        }
+//        if dataSource.showPhoneCodeInList {
+//            name = "\(name) (\u{202A}\(country.phoneCode)\u{202C})"
+//        }
         cell.imageView?.image = country.flag
         
         cell.flgSize = dataSource.cellImageViewSize
